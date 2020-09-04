@@ -1,0 +1,16 @@
+
+<Word2Vec> 
+목적함수 P(o|c)를 최대화 한다.
+P(o|c) ~ softmax(Uo.dot(Uc))
+        ~ softmax(Wi.dot(Wk))
+
+
+- 즉 context에서 주변단어 o가 중심단어 c와
+동시등장 빈도가 높으면 이 값을 증가시키고,
+등시등장 빈도가 낮으면 이 값을 감소시킨다.
+
+
+<Glove>
+P(k|i) ~ Wi.dot(Wk)
+       ~ Ui.dot(Uk)
+
